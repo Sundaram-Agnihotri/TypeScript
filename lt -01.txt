@@ -1,0 +1,50 @@
+TypeScript is an open source programming language developed by Microsoft . It is statically typed superset of javascript that compiles down into plain javascript.
+
+Problems in JavaScript : 
+JavaScript , despite being a powerful and versatile language has its ow challenges and drawbacks that developers often encounter . Some of the common problems in js : 
+ 1: Lack of static typing
+
+ exaple : let a = "sund"
+          a = 24
+
+2 : Global Scope Issues : 
+Global variables can significantly increase coupling, significantly reduces the scalability and testability of your code. Once you start using globals, you now have to know where and how the variable is modified (i.e. breaking encapsulation). Most of the literature and conventions out there will argue that performance is the least of your concerns when using globals.
+
+Secondly, global variables take longer for Javascript to "find" than local variables. The difference in speed isn't huge, but it does exist.
+
+3 : Tooling limitations
+4 : Security Concerns : 
+ As js is used in client side so it cause some vulnerability activities and the error throw in js after execution of code  , this is called runtime error... and in tyescript the error throw on writing a code.
+
+ Solutions : 
+ It introduces some additional features and strict syntax rules  : 
+ 1 : static typing
+ 2 : type safety 
+ 3 : code readability and maintainability
+ 4 : reduced runtime errors
+ 5 : improved developer experience
+
+As in typescript the all files written in typescript always converted into plain javascipt on execution whether there are many errors in files , So if we want that on error in files the plain javascript file does not make on executing the typescript file , for this simply enable or uncomment the flag in tsconfig.json which is "noEmitOnError": true,
+
+Some Important DataTypes : 
+1 : Any -> it is a type which is used to represent the dynamically or untyped value; yOur value must be anything . You dont have a restrictions in value. just like in js
+
+2 : Unknown -> Unknown type is used to make our code type-safe. when we use the unknown type we have to write extra code but finally, our code will be type-safe. type safety is nothing but the prevention of type errors.
+Unknown is similar to any data type . When we work with security concern in programming like check the condition on behalf of type then we used unknown type
+
+3 : undefined -> donot defined a variable like let a;
+console.log(a)    //undefined
+
+4 : null -> it is a special value that represent intentional absence of any value and object.
+eg : let a = null;   means -> it contains something 
+
+5 : void -> when a function did not return anything
+
+Note : we have to write undefined in case of declaring a undefined variable , but if we donot write the variable is of any type.
+Any datatype would be consider if we make a variable of null type
+
+Type Interface :
+it is a way to define contract for object shapes , allows you to specify a structure of objects 
+
+Enum -> it is not in js but it is in ts
+
